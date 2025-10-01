@@ -1,6 +1,231 @@
 @font-face {
-    font-family: 'josefin';
-    src: url(../font/JosefinSans-VariableFont_wght.ttf);
+  font-family: 'Commissioner';
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Commissioner', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+body {
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 48%);
+  --docwidth: 90%;
+  background-color: #fff;
+  color: var(--black);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+header {
+  background: url("../images/mobile/image-hero.jpg") no-repeat center/cover;
+  color: #fff;
+  height: 70vh;
+  position: relative;
+  padding: 1rem;
+}
+
+#menu {
+  width: var(--docwidth);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#check {
+  display: none;
+}
+
+#inner-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  color: #000;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+#inner-menu li {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#check:checked ~ #inner-menu {
+  display: flex;
+}
+
+#check:checked ~ label img {
+  content: url("../img/icon-close.svg");
+}
+
+#hero-text {
+  border: 2px solid #fff;
+  padding: 1rem;
+  max-width: 300px;
+  margin: 5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+#about {
+  width: var(--docwidth);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.about-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  color: var(--dark-gray);
+  line-height: 1.6rem;
+}
+
+#creations {
+  width: var(--docwidth);
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.creations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.see-all {
+  border: 1px solid #000;
+  background: none;
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  position: relative;
+}
+.desktop{
+    display: none;
+}
+.card img {
+  border-radius: 5px;
+}
+
+.card span {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.socials img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background: url("../img/desktop/image-hero.jpg") no-repeat center/cover;
+    height: 80vh;
+    padding: 2rem 5rem;
+  }
+
+  #menu label {
+    display: none;
+  }
+
+  #inner-menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    color: #fff;
+    box-shadow: none;
+    width: auto;
+  }
+
+  #inner-menu li {
+    border: none;
+    padding: 0 1rem;
+  }
+
+  #hero-text {
+    max-width: 500px;
+    font-size: 2.5rem;
+    margin: 10rem 0;
+  }
+
+  #about {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-img, .about-text {
+    flex: 1;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mobile{
+    display: none;
+  }
+  .desktop {
+    display: inline;
+  }
 }
 
 @font-face {
@@ -184,7 +409,7 @@ footer p{
 @media screen and (min-width:576px) {
 
     .card img {
-        content: url(../img/tryharder.jpg);
+        content: url(../i);
     }
 
     .breack {

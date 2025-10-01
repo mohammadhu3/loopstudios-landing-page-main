@@ -1,111 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoopStudios</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LoopStudios</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div id="logo">
-                <img src="./assets/img/logo.svg" alt="">
-            </div>
-            <label for="check">
-                <img src="./assets/img/icon-hamburger.svg" alt="">
-            </label>
-            <input type="checkbox" id="check">
-            <ul>
-                <li>About </li>
-                <li>Careers</li>
-                <li>Events</li>
-                <li>Products</li>
-                <li>Support</li>
-            </ul>
-        </nav>
-        <h1>Immersive <br></span>experiences <span class="breack"><br></span>that <span
-                class="breack"><br></span>deliver</h1>
-    </header>
-    <main>
-        <section id="speech">
-            <div>
-                <img src="./assets/img/mobile/image-interactive.jpg" alt="">
-            </div>
-            <div>
-                <h2>The leader in interactive VR</h2>
-            </div>
-            <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best
-                companies around the globe. Our award-winning creations have transformed businesses through digital
-                experiences that bind to their brand</p>
-        </section>
-        <section id="gallery">
-            <h2>Our creations</h2>
-            <div id="cards">
-                <div class="card">
-                    <img src="./assets/img/mobile/image-deep-earth.jpg" alt="">
-                    <h3>Deep earth</h3>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/mobile/image-night-arcade.jpg" alt="">
-                    <h3>Night arcade</h3>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/mobile/image-soccer-team.jpg" alt="">
-                    <h3>Soccer team VR</h3>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/mobile/image-grid.jpg" alt="">
-                    <h3>The grid</h3>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/mobile/image-from-above.jpg" alt="">
-                    <h3>From up above VR</h3>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/mobile/image-pocket-borealis.jpg" alt="">
-                    <h3>Pocket Borealis</h3>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/mobile/image-curiosity.jpg" alt="">
-                    <h3>The curiosity</h3>
-                </div>
-                <div class="card">
-                    <img src="./assets/img/mobile/image-fisheye.jpg" alt="">
-                    <h3>Make it fisheye</h3>
-                </div>
-            </div>
-            <button class="seeallBtn">See All</button>
-        </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="submenu">
-                <div class="footerLogo"><img src="./assets/img/logo.svg" alt=""></div>
-                <nav>
-                    <ul>
-                        <li>About </li>
-                        <li>Careers</li>
-                        <li>Events</li>
-                        <li>Products</li>
-                        <li>Support</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="reso">
-                <img src="./assets/img/icon-facebook.svg" alt="">
-                <img src="./assets/img/icon-instagram.svg" alt="">
-                <img src="./assets/img/icon-pinterest.svg" alt="">
-                <img src="./assets/img/icon-twitter.svg" alt="">
-            </div>
-            <p>
-                © 2021 Loopstudios. All rights reserved.
-            </p>
+  <header>
+    <nav id="menu">
+      <div id="logo">loopstudios</div>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <img src="./assets/img/icon-hamburger.svg" alt="menu">
+      </label>
+      <ul id="inner-menu">
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+      </ul>
+    </nav>
+    <div id="hero-text">
+      <h1>IMMERSIVE EXPERIENCES<br>THAT DELIVER</h1>
+    </div>
+  </header>
 
-        </div>
-    </footer>
+  <section id="about">
+    <div class="about-img">
+      <img src="./assets/img/mobile/image-interactive.jpg" alt="vr guy">
+    </div>
+    <div class="about-text">
+      <h2>THE LEADER IN INTERACTIVE VR</h2>
+      <p>
+        Founded in 2011, Loopstudios has been producing world-class virtual reality
+        projects for some of the best companies around the globe. Our award-winning
+        creations have transformed businesses through digital experiences that bind
+        to their brand.
+      </p>
+    </div>
+  </section>
+  <section id="creations">
+    <div class="creations-header">
+      <h2>OUR CREATIONS</h2>
+      <button class="see-all">SEE ALL</button>
+
+    </div>
+    <div class="grid">
+
+      <div class="card"><img src="./assets/img/mobile/image-deep-earth.jpg" class="mobile"><img
+          src="./assets/img/desktop/image-deep-earth.jpg" class="desktop"> <span>DEEP EARTH</span></div>
+      <div class="card"><img src="./assets/img/mobile/image-night-arcade.jpg" class="mobile"><img
+          src="./assets/img/desktop/image-night-arcade.jpg" class="desktop"><span>NIGHT ARCADE</span></div>
+      <div class="card"><img src="./assets/img/mobile/image-soccer-team.jpg" class="mobile"><img
+          src="./assets/img/desktop/image-soccer-team.jpg"> <span>SOCCER TEAM VR</span></div>
+      <div class="card"><img src="./assets/img/mobile/image-grid.jpg" class="mobile"><img
+          src="./assets/img/desktop/image-grid.jpg" class="desktop"><span>THE GRID</span></div>
+      <div class="card"><img src="./assets/img/mobile/image-from-above.jpg" class="mobile"><img
+          src="./assets/img/desktop/image-from-above.jpg" class="desktop"><span>FROM UP ABOVE VR</span></div>
+      <div class="card"><img src="./assets/img/mobile/image-pocket-borealis.jpg" class="mobile"><img
+          src="./assets/img/desktop/image-pocket-borealis.jpg"> <span>POCKET BOREALIS</span></div>
+      <div class="card"><img src="./assets/img/mobile/image-curiosity.jpg" class="mobile"> <img
+          src="./assets/img/desktop/image-curiosity.jpg"> <span>THE CURIOSITY</span></div>
+      <div class="card"><img src="./assets/img/mobile/image-fisheye.jpg" class="mobile"><img
+          src="./assets/img/desktop/image-fisheye.jpg" class="desktop"><span>MAKE IT FISHEYE</span></div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-logo">loopstudios</div>
+    <ul class="footer-menu">
+      <li>About</li>
+      <li>Careers</li>
+      <li>Events</li>
+      <li>Products</li>
+      <li>Support</li>
+    </ul>
+    <div class="socials">
+      <a href="#"><img src="./assets/img/icon-facebook.svg" alt="icon-facebook"></a>
+      <a href="#"><img src="./assets/img/icon-twitter.svg" alt="icon-twitter"></a>
+      <a href="#"><img src="./assets/img/icon-pinterest.svg" alt="icon-pinterest"></a>
+      <a href="#"><img src="./assets/img/icon-instagram.svg" alt="icon-instagram"></a>
+    </div>
+    <p>© 2021 Loopstudios. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
