@@ -24,7 +24,6 @@ img {
 header {
   background: url("../img/mobile/image-interactive.jpg") no-repeat center/cover;
   color: #fff;
-  height: 70vh;
   position: relative;
   padding: 3rem;
 }
@@ -290,12 +289,12 @@ header {
 }
 
 h1 {
-  border: 2px #fff solid;
+  border: 3px #fff solid;
   width: var(--width-all);
   font-weight: 200;
-  margin: 5% auto;
-  padding: 2rem;
-  font-size: 20px;
+  margin: 10% auto;
+  padding: 0.9rem;
+  font-size: 30px;
 }
 
 h2 {
