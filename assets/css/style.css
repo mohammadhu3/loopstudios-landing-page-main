@@ -1,12 +1,11 @@
 @font-face {
-  font-family: 'Commissioner';
-
+  font-family: "Alata-Regular";
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Commissioner', sans-serif;
+  font-family: "Commissioner", sans-serif;
   font-size: 1rem;
   box-sizing: border-box;
 }
@@ -22,13 +21,12 @@ img {
   display: block;
 }
 
-
 header {
-  background: url("../images/mobile/image-hero.jpg") no-repeat center/cover;
+  background: url("../img/mobile/image-interactive.jpg") no-repeat center/cover;
   color: #fff;
   height: 70vh;
   position: relative;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 #menu {
@@ -44,10 +42,6 @@ header {
   font-weight: bold;
 }
 
-#check {
-  display: none;
-}
-
 #inner-menu {
   display: none;
   flex-direction: column;
@@ -58,20 +52,12 @@ header {
   right: 10px;
   width: 200px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #inner-menu li {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
-}
-
-#check:checked~#inner-menu {
-  display: flex;
-}
-
-#check:checked~label img {
-  content: url("../img/icon-close.svg");
 }
 
 #hero-text {
@@ -81,7 +67,6 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 
 #about {
   width: var(--docwidth);
@@ -117,7 +102,7 @@ header {
 .see-all {
   border: 1px solid #000;
   background: none;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
@@ -148,7 +133,6 @@ header {
   font-weight: bold;
   font-size: 1.2rem;
 }
-
 
 footer {
   background: #000;
@@ -231,14 +215,14 @@ footer {
 }
 
 @font-face {
-  font-family: 'alata';
+  font-family: "alata";
   src: url(../font/Alata-Regular.ttf);
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'josefin', sans-serif;
+  font-family: "josefin", sans-serif;
   box-sizing: border-box;
   --width-all: 90%;
 }
@@ -259,7 +243,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 200;
   text-transform: uppercase;
 }
 
@@ -287,7 +270,13 @@ header ul {
 header #check {
   display: none;
 }
+header #openmenu:checked~ul {
+  display: block;
+}
 
+#openmenu{
+  display: none;
+}
 header {
   background-image: url(../img/mobile/image-hero.jpg);
   background-position: center;
@@ -301,27 +290,26 @@ header {
 }
 
 h1 {
-  border: 1px #fff solid;
+  border: 2px #fff solid;
   width: var(--width-all);
-  font-weight: 100;
-  font-size: 2rem;
-  margin: 0 auto;
-  padding: 1rem;
-  color: #fff;
+  font-weight: 200;
+  margin: 5% auto;
+  padding: 2rem;
+  font-size: 20px;
 }
 
 h2 {
   text-align: center;
-  letter-spacing: .5rem;
-  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-size: 1.6rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 h3 {
   color: white;
   font-size: 1.5rem;
-  max-width: 35%;
+  max-width: 40%;
 }
 
 #speech {
@@ -362,14 +350,14 @@ h3 {
 
 .seeallBtn {
   padding: 1.5rem 3rem;
-  border: solid .001px black;
+  border: solid 0.001px black;
   background-color: #fff;
   margin: 2rem auto;
   font-weight: 200;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 400;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
 }
 
 footer {
@@ -405,7 +393,6 @@ footer {
 .socials img {
   width: 20px;
 }
-
 
 @media screen and (min-width: 768px) {
   footer {
